@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import './colors';
+@import './header';
+@import './layout';
+
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: $light-brown;
+    font-family: 'Dancing Script', sans-serif;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), $light-brown), url("../assets/images/background.jpg");
+    
+}
+
+header {
+    display: flex;
+}
+
+
+
+section {
+    width: 100%;
+    margin: 150px 0 0 0;
+    // margin: 100px 30px 100px 30px;
+}
+
+
+
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;    
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: $primary-pink;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+footer {
+    max-height: 300px;
+    background-color: $light-brown;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        max-width: 300px;
+    }
+}
